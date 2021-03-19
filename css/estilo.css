@@ -1,0 +1,301 @@
+/* PATRONES GLOBALES DE CSS */
+
+/* Tipografía Principal */
+h1, h2, h3, a, button { font-family: 'Montserrat', sans-serif; }
+
+/* Tipografía Secundaria */
+h4, h5, h6, p, form, input, select, option, div, span { font-family: 'Poppins', sans-serif; }
+
+/* Asignación de propiedad display: block; a etiquetas de estructura */
+header, main, section, footer, aside, article, nav, figure, figcaption, div { display: block; }
+
+/*quitar margen que traen margen po defecto varias equitas de html*/
+h1, h2, h3,h4, h5, h6, p, article, body {margin: 0;}
+
+/*quitar scroll horizontal*/
+body {overflow-x:hidden;  background:#000; }
+
+/* CSS Propio */
+
+/* Componente Botón WhatsApp flotante */
+
+
+
+/* Componente Menú Responsive */
+aside#menu-moviles { width: 290px; height: 100%;  display: block; margin: 0; float: none; position: fixed; 
+top: 0; left:-290px;  z-index: 9999; background: #350a5d; }
+
+aside#menu-moviles a#abrir-menu { width:40px; height:auto;  display:block; margin:0;  float:none;  
+position:absolute;  top:30px;  right:-60px;   z-index:99996;   color:#350a5d;  text-align:center;  
+font-size:1.3em;  padding:8px 0;   transition: all 0.3s ease-in; }
+
+aside#menu-moviles a#abrir-menu:hover { color:#000;  transition: all 0.3s ease-in; }
+
+aside#menu-moviles a#cerrar-menu { width:40px; height:auto;  display:none;  margin:0;  float:none; 
+position:absolute;  top:30px;  right:-60px;  z-index: 99996;  color:#fff;  text-align:center; 
+text-decoration: none; color:#fff;   font-size: 1.3em;   padding:8px 0;  transition: all 0.3s ease-in; }
+
+aside#menu-moviles a#cerrar-menu:hover { color:#000;  transition: all 0.3s ease-in; }
+
+aside#menu-moviles nav { width:70%;  height:auto;  display:block;  margin:40px auto 0 auto;    float:none;
+position:relative;}
+
+aside#menu-moviles nav a{ width:100%;  height:auto;  display:block;  margin:0 auto 25px;    float:none;
+position:relative;  color:#fff;   text-decoration:none;   transition:all 0.3s ease-in;}
+
+aside#menu-moviles nav a:hover { color: #999; transition: all 0.3s ease-in; }
+
+
+
+/* Componente Header y Menú */
+header { width: 100%; height:100px;  margin:0; float:none; position: fixed; left: 0; top: 0; z-index: 9998; 
+ }
+
+header article { width:1100px;  height:100px;  margin:0 auto;  float:none;   position:relative; }
+
+header article a { width:189px;  height:80px; display:block; position:relative;  margin:0 auto;  
+float:none;  top:10px}  
+
+header article a img { width: auto; height: 80px; margin: 0 auto; float: none; position: relative; 
+display: block; }
+
+.transparente {background: rgb(196 196 196 / 0%); }
+
+.gris {background: rgb(196 196 196 / 100%); }
+
+
+
+
+/* Componente:contenedor Main */
+main { width:100%;  height:auto;  position:relative;  margin:0 auto; float:none; }
+
+
+/*slider*/
+main section#slider-home{ width:100%;  height:auto;  position:relative;  margin:0 auto;  float:none;
+/*background: url(../img/slider-01.jpg) no-repeat; top:center;   background-size:cover;*/ }
+
+main section#slider-home article { width:100%;  height:100vh;  position:relative;  margin:0 auto;  float:none;
+}
+
+main section#slider-home article figure { width:100%;  height:100vh;  position:relative;  margin:0;  
+float:left;}
+
+main section#slider-home article figure.slider-01{ background: url(../img/slider-01.jpg) no-repeat; 
+top:center; background-size:cover; }
+
+main section#slider-home article figure.slider-02{ background: url(../img/slider-02.jpg) no-repeat; 
+top:center; background-size:cover; } 
+
+main section#slider-home article figure.slider-03{  background: url(../img/slider-03.jpg) no-repeat; 
+top:center; background-size:cover;} 
+
+
+.slick-next {right: 30px !important; z-index: 999;}
+.slick-prev { left: 30px !important; z-index: 999}
+
+.slick-dots { bottom:30px !important;  }
+
+.slick-dots li button{ width:10px !important; height:10px !important;  }
+
+.slick-dots li button:before {width:10px !important; height:10px !important; font-size: 1em; 
+color:transparent !important;  border-radius:50% !important;  background:#f50 !important;   
+opacity: 1 !important; }
+
+.slick-dots li.slick-active button:before {color: transparent !important; background:#0f67c4 !important; 
+opacity: 1 !important;}
+
+
+
+
+
+/*banner*/
+main section#baner {width:100%; height:auto;  position:relative;  margin:0 auto;  float:none;   }
+main section#baner nav{width:100%; height:555px; position:relative; margin:0 auto;  float:none;  background:#000; }
+main section#baner nav a{ position:absolute; display:block; transition:0.3s ease-in;}
+main section#baner nav a:hover { opacity:0.5;  transition:0.3s ease-in;}
+
+main section#baner nav a#img-baner-01 {width:50%; height:100%;  top:0; left:0;  
+background: url(../img/fotos-grupo-1-001.jpg) no-repeat;  top:center;  background-size:cover; }
+
+main section#baner nav a#img-baner-02{width:50%; height:50%;  top:0; right:0;  
+background: url(../img/fotos-grupo-1-002.jpg) no-repeat;  top:center;  background-size:cover; }
+
+main section#baner nav a#img-baner-03{width:15%; height:50%;  bottom:0; right:35%;  
+background: url(../img/fotos-grupo-1-003.jpg) no-repeat;  top:center;  background-size:cover;}
+
+main section#baner nav a#img-baner-04{width:35%; height:50%;  bottom:0; right:0;  
+background: url(../img/fotos-grupo-1-004.jpg) no-repeat;  top:center;  background-size:cover; } 
+
+
+
+
+/*componente grid instagram*/
+
+main section#grid-instagram{width:100%; height:auto;  position:relative;  margin:0 auto;  float:none; 
+background:#fff;  }
+
+main section#grid-instagram article{width:1100px; height:auto; position:relative; margin:0 auto;  
+float:none; padding: 80px 0;}
+
+main section#grid-instagram article a{width:330px;  height:330px; display:inline-block; margin:17px; 
+float:none; position:relative;   overflow:hidden;   transition: all 0.3s ease-in;}
+
+main section#grid-instagram article a img {width:100%;  height:auto; display:block; margin:0 auto; 
+float:none; position:relative;  transition: all 0.3s ease-in;}
+
+main section#grid-instagram article a:hover{opacity:0.7;  transition: all 0.3s ease-in;} 
+
+main section#grid-instagram article a:hover img { transform: scale(1.05);  transition: all 0.3s ease-in;}
+
+
+
+/*fotos-home*/
+main section#fotos-home{width:100%; height:auto;  position:relative;  margin:0 auto;  float:none; }
+
+main section#fotos-home a#btn-naranja {width:50px; height:auto;  display:block;  float:none;  
+position:absolute;  top:-25;  left:150px;  z-index:50;   border-radius:50%;  color:#fff;  background:#f50;
+text-align:center;  text-decoration:none;  font-size:2.5em; line-height: 1em;  padding:5px 0; 
+transition: all 0.3 ease-in;}
+
+main section#fotos-home a#btn-naranja:hover{ transform:rotate(-45deg); background:#000; 
+transition: all 0.3 ease-in;}
+
+main section#fotos-home nav {width:100%; height:1000px; position:relative; margin:0 auto;  float:none;  
+background:#000;}
+
+main section#fotos-home nav a {position:absolute; display:block; transition:0.3s ease-in;}
+main section#fotos-home nav a:hover { opacity:0.5;  transition:0.3s ease-in;}
+
+main section#fotos-home nav a#img-fotos-home-01{width:50%; height:50%;  top:0; left:0;  
+background: url(../img/fotos-grupo-3-001.jpg) no-repeat;  top:center;  background-size:cover; }
+
+
+main section#fotos-home nav a#img-fotos-home-02{width:25%; height:25%;  top:0; right:25%;  
+background: url(../img/fotos-grupo-3-002.jpg) no-repeat;  top:center;  background-size:cover; }
+
+main section#fotos-home nav a#img-fotos-home-03{width:25%; height:25%;  top:0; right:0;  
+background: url(../img/fotos-grupo-3-003.jpg) no-repeat;  top:center;  background-size:cover; }
+
+main section#fotos-home nav a#img-fotos-home-04{ width:50%; height:25%;  top:25%; right:0;  
+background: url(../img/fotos-grupo-3-003.jpg) no-repeat;  top:center;  background-size:cover;}
+
+main section#fotos-home nav a#img-fotos-home-05{width:50%; height:25%;  bottom:25%;  left:0;  
+background: url(../img/fotos-grupo-3-005.jpg) no-repeat;  top:center;  background-size:cover;}
+
+main section#fotos-home nav a#img-fotos-home-06{width:25%; height:25%;  bottom:0;  left:0;   
+background: url(../img/fotos-grupo-3-006.jpg) no-repeat;  top:center;  background-size:cover;  }
+
+main section#fotos-home nav a#img-fotos-home-07{width:25%; height:25%;  bottom:0;  left:25%;   
+background: url(../img/fotos-grupo-3-007.jpg) no-repeat;  top:center;  background-size:cover; }
+
+main section#fotos-home nav a#img-fotos-home-08{ width:50%; height:50%;  bottom:0;  right:0;   
+background: url(../img/fotos-grupo-3-008.jpg) no-repeat;  top:center;  background-size:cover; }
+
+
+
+
+
+/* Componente Footer */
+footer { width:100%;  height:300px;  position:relative;  margin: 0 auto; float:none;
+background:#333;}  
+
+
+
+
+
+
+/* inferior footer */
+
+
+
+
+
+/* Zona de Media Queries - RESPONSIVE DESIGN */
+
+/* Ajustes para Tablets */
+@media only screen and (max-width: 1199px){
+
+	aside#menu-moviles a#abrir-menu,
+	aside#menu-moviles a#cerrar-menu{ top: 22px;}
+
+
+     header { height:80px; }
+     header article {  width:90%;    height:80px; }
+     header article a {width:118px;  height:50px;  margin:0;  float:right;  top:15px; }
+     header article a img {width:100%;  height:auto; }    
+
+    main{ margin:80px auto 0 auto;}
+    
+    main section#baner nav{height:470px;}
+    main section#baner nav a{position:relative;  float:left; }
+    main section#baner nav a#img-baner-01 {width:50%; height:50%;}
+    main section#baner nav a#img-baner-02{width:50%; height:50%;}
+    main section#baner nav a#img-baner-03{width:50%; height:50%; right:0; }
+    main section#baner nav a#img-baner-04{width:50%; height:50%; } 
+
+
+    main section#grid-instagram article{width:80%;}
+
+    main section#grid-instagram article a{width:300px;  height:300px;  margin:0 auto 35px; 
+    display:block; }
+
+
+main section#fotos-home nav { height:1030px;}
+
+
+main section#slider-home article {height: 75vh;}
+
+
+main section#fotos-home a#btn-naranja {top:25;  left:25px; }
+
+main section#fotos-home nav a {position:relative; float:left; }
+
+main section#fotos-home nav a#img-fotos-home-01{width:100%; height:290px; }
+main section#fotos-home nav a#img-fotos-home-02,
+main section#fotos-home nav a#img-fotos-home-03,
+main section#fotos-home nav a#img-fotos-home-04,
+main section#fotos-home nav a#img-fotos-home-05,
+main section#fotos-home nav a#img-fotos-home-06,
+main section#fotos-home nav a#img-fotos-home-07{width:50%; height:150px;}
+
+
+main section#fotos-home nav a#img-fotos-home-02{ right: 0;}
+main section#fotos-home nav a#img-fotos-home-04{ top: 0;}
+main section#fotos-home nav a#img-fotos-home-05{ bottom: 0;}
+main section#fotos-home nav a#img-fotos-home-07{ left: 0;}
+
+
+main section#fotos-home nav a#img-fotos-home-08{ width:100%; height:290px; }
+
+}
+
+
+
+@media only screen and (max-width: 799px){
+    
+}
+
+/* Ajustes para Móviles Grandes */
+@media only screen and (max-width: 499px){
+    
+}
+
+/* Ajustes para Móviles Pequeños */
+@media only screen and (max-width: 399px){
+
+	main section#grid-instagram article a{width:100%;  height:auto;}
+    
+}
+
+		
+
+
+
+
+
+
+
+
+
+
+
